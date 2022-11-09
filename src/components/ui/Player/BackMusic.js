@@ -31,7 +31,6 @@ const BackMusic = ({music, selectSong, song, sound, setSound}) => {
   const playPriMusic =  () => {
   try {
     SoundPlayer.playUrl(song.sound);
-    SoundPlayer.setNumberOfLoops(-1)
   } catch (error) {
     console.log(`cannot play the sound file`, e);
   }
